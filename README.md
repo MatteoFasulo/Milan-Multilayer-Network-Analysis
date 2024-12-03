@@ -24,24 +24,29 @@ Our analysis examines the multilayer PTN of Milan, Italy, focusing on three key 
 These features help identify critical nodes that underpin the network's resilience.
 The network comprises three interconnected layers: metro, tram, and bus systems. Each layer is represented as a graph in L-space topology [1], where stops and stations are nodes, and their connections are edges (e.g., a bus traveling between two stops). Data for this study were sourced from Open Street Map, and the full analysis, including a Python notebook, is publicly available in this repo
 
-
-
 ## Dataset
 
-Using data from OpenStreetMap (OSM), we construct the metro, tram and bus networks for Milan (Italy). We downloaded data in geo-referenced vectorial format from Open Street Map under the Open Database License (ODbL) v1.0. Specifically, the datasets were extracted using the Overpass Turbo tool by invoking its API. All data used in this study is publicly available, ensuring transparency and accessibility.
+Using data from [OpenStreetMap (OSM)](http://www.openstreetmap.org/), we construct the metro, tram and bus networks for Milan (Italy). We downloaded data in geo-referenced vectorial format from Open Street Map under the Open Database License (ODbL) v1.0. Specifically, the datasets were extracted using the [Overpass Turbo](https://overpass-turbo.eu/) tool by invoking its API. All data used in this study is publicly available, ensuring transparency and accessibility.
 
-For storage and manipulation, the data was structured as a graph using the NetworkX library, a Python package designed for creating, analyzing, and visualizing complex networks. NetworkX offers a rich suite of tools for computing various graph measures and performing network analysis. Additionally, other Python libraries, such as OSMnx and GeoPandas, were employed to streamline the processing pipeline and enhance code readability while maintaining high development efficiency. In addition, a series of automatic and manual topological cleaning operations were neeeded in order to extract consistent and usable graphs.
+For storage and manipulation, the data was structured as a graph using the [NetworkX](https://networkx.org/) library, a Python package designed for creating, analyzing, and visualizing complex networks. NetworkX offers a rich suite of tools for computing various graph measures and performing network analysis. Additionally, other Python libraries, such as [OSMnx](https://osmnx.readthedocs.io/en/stable/) and [GeoPandas](https://geopandas.org/en/stable/), were employed to streamline the processing pipeline and enhance code readability while maintaining high development efficiency. In addition, a series of automatic and manual topological cleaning operations were neeeded in order to extract consistent and usable graphs.
 
-Three distinct datasets were collected for this study, representing different modes of public transport in Milan: metro, tram, and bus (including both stops and routes). Of these, the bus dataset is the most complex due to the extensive network. For consistency and relevance, only bus stops operated by Azienda Trasporti Milanesi S.p.A (ATM) were included.
+Three distinct datasets were collected for this study, representing different modes of public transport in Milan: metro, tram, and bus (including both stops and routes). Of these, the bus dataset is the most complex due to the extensive network. For consistency and relevance, only bus stops operated by Azienda Trasporti Milanesi S.p.A (ATM) were included. 
+
+The datasets were further categorized as follows:
+
+<div align="center">
+
+| Layer |   N  |   M  | Lines |
+|:-----:|:----:|:----:|:-----:|
+| Metro |  125 |  258 |   5   |
+|  Tram |  308 |  680 |   17  |
+|  Bus  | 1370 | 3788 |  113  |
+
+</div>
+
 
 ## References
 - [1] Sen et al, “Small-world properties of the Indian railway network”, Mar/2023, American Physical Society, doi=10.1103/PhysRevE.67.036106, url=https://link.aps.org/doi/10.1103/PhysRevE.67.036106
-- A. A. Hagberg, D. A. Schult, and P. J. Swart, “Exploring network structure, dynamics,
-and function using networkx,” in Proceedings of the 7th Python in Science Conference,
-G. Varoquaux, T. Vaught, and J. Millman, Eds., Pasadena, CA USA, 2008, pp. 11–15.
-- G. Boeing, “Modeling and Analyzing Urban Networks and Amenities with OSMnx,”
-Working paper, 2024. [Online]. Available: https://geoffboeing.com/publications/
-osmnx-paper/.
 
 ## License
 

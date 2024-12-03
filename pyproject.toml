@@ -1,0 +1,22 @@
+[project]
+name = "Milan-Multilayer-Network-Analysis"
+version = "0.1.0"
+description = "Multilayer Network Analysis of Milan Public Transport System"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "folium>=0.18.0",
+    "geonetworkx>=0.5.3",
+    "ipykernel>=6.29.5",
+    "mapclassify>=2.8.1",
+    "matplotlib>=3.9.2",
+    "networkx>=3.4.2",
+    "numpy>=2.1.3",
+    "osmnx>=1.9.3",
+    "pandas>=2.2.3",
+    "powerlaw>=1.5",
+    "requests>=2.32.3",
+    "selenium>=4.27.1",
+    "shapely>=2.0.6",
+    "tqdm>=4.67.0",
+]

@@ -11,7 +11,7 @@ This repository contains the code and report for the "Social Network Analysis" c
 
 ## Report
 
-The PDF report is available [here](https://matteofasulo.github.io/Milan-Multilayer-Network-Analysis/report.pdf).
+The PDF report is available [here](https://github.com/MatteoFasulo/Milan-Multilayer-Network-Analysis/blob/main/report.pdf).
 
 ## Abstract 
 In recent decades, analyzing the robustness of Public Transport Networks (PTNs) has become increasingly critical for ensuring their reliability and efficiency. As urban populations grow and transportation systems become more interconnected, understanding the resilience of PTNs to disruptions is essential for effective planning, optimization, and sustainable development. Complex network theory provides a powerful framework for investigating the structural and functional properties of spatial networks like PTNs, offering insights into their vulnerability and capacity to withstand failures.
@@ -46,4 +46,4 @@ The datasets were further categorized as follows:
 
 ## License
 
-This project is licensed under the [MIT License](https://matteofasulo.github.io/Milan-Multilayer-Network-Analysis/LICENSE).
+This project is licensed under the [MIT License](https://github.com/MatteoFasulo/Milan-Multilayer-Network-Analysis/blob/main/LICENSE).
